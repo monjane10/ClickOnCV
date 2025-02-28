@@ -328,11 +328,18 @@ button {
     }
 
     #desktop-warning {
-        background: #ffcc00;
-        color: #000;
-        text-align: center;
-        padding: 10px;
-        font-weight: bold;
+        display: none; /* Esconde por padrão */
+    }
+    
+    @media (max-width: 768px) { 
+        #desktop-warning {
+            display: block; /* Exibe em telas menores que 768px */
+            background: #ffcc00;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
     }
     
 }

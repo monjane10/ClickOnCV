@@ -328,12 +328,12 @@ button {
     }
 
     #desktop-warning {
-        display: none; /* Esconde por padrão */
+        display: none !important; /* Esconde por padrão */
     }
     
     @media (max-width: 600px) { 
         #desktop-warning {
-            display: block; /* Exibe em telas menores que 768px */
+            display: block !important; /* Exibe em telas menores que 768px */
             background: #ffcc00;
             color: #000;
             text-align: center;
